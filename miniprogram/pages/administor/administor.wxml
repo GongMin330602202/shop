@@ -1,0 +1,51 @@
+<!--miniprogram/pages/administor/administor.wxml-->
+<image class='background' src="cloud://zyx-3gq50b3h393cd1f4.7a79-zyx-3gq50b3h393cd1f4-1304181548/backgund/主页.png"></image>
+ <view class="userinfo" style='height:{{helfH*0.09}}rpx;'>
+    <button  open-type="getUserInfo"  bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"size="default"></button>
+    <view class="userinfo-nickname-wrapper">
+     {{getusername}}，老师你好！
+    </view>
+  </view>
+<view>
+   <view class="title" style='height:{{helfH*0.07}}rpx;'>
+    <scroll-view class="bud"scroll-x >
+      <view bindtap="cativeNav" data-index="{{index}}"
+      class="content {{index===currentIndexNav?'active':''}}" 
+      wx:for="{{clinicsselection}}" wx:key="id">{{item.text}}
+    
+      </view>
+    </scroll-view>
+  </view>
+<view wx:if="{{currentIndexNav===0}}" >第一个页面</view>
+<view wx:if="{{currentIndexNav===1}}" >第二个页面</view>
+<view wx:if="{{currentIndexNav===2}}" >第三个页面</view>
+<view wx:if="{{currentIndexNav===3}}" >第四个页面</view>
+<view wx:if="{{currentIndexNav===4}}" >
+  <view  class="kongbai1"></view>
+  <view class="inputviwe">
+    <view class="biaozhu">品牌</view><input class="inputstyle" placeholder="输入品牌"  bindinput="getbrand" value="{{brand}}"></input>
+    <view class="biaozhu">型号</view><input class="inputstyle" placeholder="输入型号"  bindinput="getmodel" value="{{model}}"></input>
+    </view>
+    <view class="inputviwe">
+    <view class="biaozhu">器械名称</view><input class="inputstyle" placeholder="输入器械名称"  bindinput="getname" value="{{name}}"></input>
+  </view>
+  <view  class="kongbai1"></view>
+  <view class="buttenlist"> 
+     <button class="butten" bindtap="adminadd">添加</button>
+     <button class="butten" bindtap="adminget">查询</button>
+     <button class="butten" bindtap="admindelte">删除</button>
+     <button class="butten" bindtap="adminchange">修改</button>
+  </view> 
+
+
+
+</view>
+
+
+
+
+
+
+
+
+  </view>

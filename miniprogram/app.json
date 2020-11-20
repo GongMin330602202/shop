@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/administor/administor",
+    "pages/logs/logs",
+
+    "pages/dealer/dealer"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "华西医学.医疗器械管理",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+  
+}

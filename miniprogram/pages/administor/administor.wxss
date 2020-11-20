@@ -1,0 +1,23 @@
+/* miniprogram/pages/administor/administor.wxss */
+.content{
+  font-size: 30rpx;
+  padding: 20rpx 45rpx;
+  display:inline-block;
+  background: linear-gradient(white,#63e96e);
+  border-radius:50rpx;
+  }
+  .content.active{
+    background-color: lightseagreen;
+     font-size: 35rpx;
+     color: white;
+  }
+
+.content.active{
+  background: linear-gradient(white,#808381);
+   font-size: 35rpx;
+   color: white;
+}
+.title{
+  white-space: nowrap;
+  padding: 5rpx 0;
+  }

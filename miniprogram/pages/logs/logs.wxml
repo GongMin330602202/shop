@@ -1,0 +1,40 @@
+<image class='background' src="cloud://zyx-3gq50b3h393cd1f4.7a79-zyx-3gq50b3h393cd1f4-1304181548/backgund/主页背景图.png"></image>
+
+<view class=""></view>
+  <view class="kongbai1">
+          <image image class="yuanhui" mode="scaleToFill" src="cloud://zyx-3gq50b3h393cd1f4.7a79-zyx-3gq50b3h393cd1f4-1304181548/backgund/院徽.png"></image>
+          </view>
+          <view  class="kongbai"></view>
+
+<text class="style">华西医疗器械维修管理系统</text>
+<view  class="kongbai"></view>
+<view  class="kongbai"></view>
+<view  class="kongbai"></view>
+
+
+
+  
+   <view class="inputviwe">
+
+      <image class="denglutubiao" mode="scaleToFill" src="cloud://zyx-3gq50b3h393cd1f4.7a79-zyx-3gq50b3h393cd1f4-1304181548/backgund/username.png"></image>
+      <input class="inputstyle0" placeholder="请输入账号" bindinput="getuserad" ></input>
+      </view>
+
+
+    <view style="height:50rpx;"></view>
+    <view class="inputviwe">
+      <image class="denglutubiao" mode="scaleToFill" src="cloud://zyx-3gq50b3h393cd1f4.7a79-zyx-3gq50b3h393cd1f4-1304181548/backgund/pass.png"></image>
+      <input class="inputstyle0" placeholder="请输入密码" password="ture"   bindinput="getwd" ></input>
+      </view>
+      <view style="height:50rpx;"></view>
+<button bindtap="login" >登录</button>
+
+ <view class="page-section page-section-gap">
+     
+      <radio-group class="group" bindchange="radioChange">
+        <view class="label-2" wx:for="{{radioItems}}">
+          <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+          <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+    </view>

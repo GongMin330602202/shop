@@ -1,0 +1,102 @@
+/**app.wxss**/
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: linear-gradient(white,#63e96e);
+  height: 1cm;
+  
+
+}
+
+button:focus{
+  outline: 0;
+
+}
+
+button::after{
+  border: none;
+}
+
+
+
+
+.icon1{
+  width:50rpx ;
+  height: 50rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+ 
+  
+}
+
+
+
+.userinfo-avatar {
+ 
+  border-radius: 50%;
+  background-size: cover;
+  background-color: lightgreen
+ 
+}
+
+.userinfo-avatar[size] {
+  width:100rpx;
+  height: 100rpx;
+}
+
+.userinfo-nickname-wrapper {
+ 
+  padding-left: 5rpx;
+  padding-bottom: 0rpx;
+  flex: 1;
+}
+
+.inputviwe{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  white-space: "nowrap";
+  font-size: 35rpx;
+  padding-top: 20rpx;
+}
+
+/******全局双项输入******/
+.inputstyle{
+  flex: 1;
+
+  border-bottom-style: solid;
+  border-width: 2rpx;
+
+  border-color: grey;
+  width: 220rpx;}
+  .butten{
+    flex: 2.5;
+    width: 50rpx;
+    border-radius: 50rpx;
+  }
+  .buttenlist{
+    display:flex;
+   }
+   .kongbai{
+    height: 100rpx;
+  }
+  .kongbai1{
+    height: 50rpx;
+  }
